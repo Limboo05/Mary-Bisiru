@@ -33,11 +33,51 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <style>
+      /* Smooth fade-out for loader */
+      #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.6s ease, visibility 0.6s ease;
+      }
+
+      #loading.fade-out {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .loader span {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #6e57e0;
+        animation: pulse 1.2s infinite alternate;
+      }
+
+      @keyframes pulse {
+        from {
+          opacity: 0.3;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <!-- ===================== LOADER ==================== -->
-
+    <div id="loading">
+      <div class="loader"><span><</span><span>/></span></div>
+    </div>
 
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
@@ -158,34 +198,6 @@
               </p>
               <a href="#contact" class="button button--flex">
                 Contact Me <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My Introduction</span>
-
-        <div class="about__container container grid">
-          <img src="assets/img/about-mary.jpg" alt="Mary photo" class="about__image" />
-
-          <div class="about__data">
-            <p class="about__description">
-              I am a motivated and detail-oriented student of Taxation at the University of Lagos, 
-              with a strong academic foundation in Law, Accounting, and Economics. 
-              I enjoy applying classroom knowledge to real-world challenges, while enhancing my communication, teamwork, and leadership skills.
-            </p>
-
-            <div class="about__buttons">
-              <a
-                download=""
-                href="assets/pdf/Bisiriyu-Mary-Temiloluwa-CV.pdf"
-                class="button button--flex"
-              >
-                Download Resume<i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
           </div>
@@ -380,34 +392,47 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Mary Temiloluwa</h1>
-            <span class="footer__subtitle">Taxation Student</span>
-          </div>
+      <footer class="footer">
+        <div class="footer__bg">
+          <div class="footer__container container grid">
+            <div>
+              <h1 class="footer__title">Mary Temiloluwa</h1>
+              <span class="footer__subtitle">Taxation Student</span>
+            </div>
 
-          <ul class="footer__links">
-            <li><a href="#about" class="footer__link">About</a></li>
-            <li><a href="#skills" class="footer__link">Skills</a></li>
-            <li><a href="#contact" class="footer__link">Contact</a></li>
-          </ul>
+            <ul class="footer__links">
+              <li><a href="#about" class="footer__link">About</a></li>
+              <li><a href="#skills" class="footer__link">Skills</a></li>
+              <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
 
-          <div class="footer__socials">
-            <a href="https://www.linkedin.com/in/mary-bisiriyu-1241a6314" target="_blank" class="footer__social">
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
+            <div class="footer__socials">
+              <a href="https://www.linkedin.com/in/mary-bisiriyu-1241a6314" target="_blank" class="footer__social">
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+            </div>
           </div>
+          <p class="footer__copy">&#169; 2025 Bisiriyu Mary Temiloluwa. All rights reserved.</p>
         </div>
-        <p class="footer__copy">&#169; 2025 Bisiriyu Mary Temiloluwa. All rights reserved.</p>
-      </div>
-    </footer>
+      </footer>
 
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+      </a>
 
-    <script src="assets/js/main.js"></script>
+      <!--==================== MAIN JS ====================-->
+      <script src="assets/js/main.js"></script>
+
+      <!--==================== FIXED LOADER SCRIPT ====================-->
+      <script>
+        window.addEventListener("load", function () {
+          const loader = document.getElementById("loading");
+          if (loader) {
+            loader.classList.add("fade-out");
+            setTimeout(() => loader.remove(), 600);
+          }
+        });
+      </script>
+    </main>
   </body>
 </html>
