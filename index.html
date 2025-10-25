@@ -448,18 +448,50 @@
       </a>
 
       <!--==================== MAIN JS ====================-->
-      <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
-      <!--==================== FIXED LOADER SCRIPT ====================-->
-      <script>
-        window.addEventListener("load", function () {
-          const loader = document.getElementById("loading");
-          if (loader) {
-            loader.classList.add("fade-out");
-            setTimeout(() => loader.remove(), 600);
-          }
-        });
-      </script>
-    </main>
-  </body>
+<!--==================== FIXED DARK MODE SCRIPT ====================-->
+<script>
+  const themeButton = document.getElementById("theme-button");
+  const darkTheme = "dark-theme";
+  const iconTheme = "uil-sun";
+
+  // Previously selected theme (if user selected)
+  const selectedTheme = localStorage.getItem("selected-theme");
+  const selectedIcon = localStorage.getItem("selected-icon");
+
+  // Get current theme
+  const getCurrentTheme = () =>
+    document.body.classList.contains(darkTheme) ? "dark" : "light";
+  const getCurrentIcon = () =>
+    themeButton.classList.contains(iconTheme) ? "uil-sun" : "uil-moon";
+
+  // If user already chose a theme before, apply it
+  if (selectedTheme) {
+    document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+    themeButton.classList[selectedIcon === "uil-sun" ? "add" : "remove"](iconTheme);
+  }
+
+  // Activate/deactivate theme manually
+  themeButton.addEventListener("click", () => {
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+
+    // Save the chosen theme and icon
+    localStorage.setItem("selected-theme", getCurrentTheme());
+    localStorage.setItem("selected-icon", getCurrentIcon());
+  });
+</script>
+
+<!--==================== FIXED LOADER SCRIPT ====================-->
+<script>
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loading");
+    if (loader) {
+      loader.classList.add("fade-out");
+      setTimeout(() => loader.remove(), 600);
+    }
+  });
+</script>
+</body>
 </html>
