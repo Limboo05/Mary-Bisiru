@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio website of Bisiriyu Mary Temiloluwa — a Taxation student passionate about finance, teaching, digital design, and youth empowerment."
+      content="Portfolio website of Bisiriyu Mary Temiloluwa – a motivated and detail-oriented Taxation student passionate about learning, leadership, and creative problem solving."
     />
     <title>Bisiriyu Mary Temiloluwa - Portfolio</title>
 
     <!--==================== OPEN GRAPH META TAGS ===================== -->
     <meta property="og:title" content="Bisiriyu Mary Temiloluwa - Portfolio" />
-    <meta property="og:image" content="/assets/img/profile-photo.png" />
+    <meta property="og:image" content="/assets/img/PwaImages/ios/512.png" />
     <meta
       property="og:description"
-      content="Portfolio website of Bisiriyu Mary Temiloluwa — a Taxation student passionate about finance, teaching, digital design, and youth empowerment."
+      content="Portfolio website of Bisiriyu Mary Temiloluwa – a motivated and detail-oriented Taxation student passionate about learning, leadership, and creative problem solving."
     />
 
     <!--==================== TWITTER META TAGS ===================== -->
     <meta name="twitter:title" content="Bisiriyu Mary Temiloluwa - Portfolio" />
     <meta
       name="twitter:description"
-      content="Portfolio website of Bisiriyu Mary Temiloluwa — a Taxation student passionate about finance, teaching, digital design, and youth empowerment."
+      content="Portfolio website of Bisiriyu Mary Temiloluwa – a motivated and detail-oriented Taxation student passionate about learning, leadership, and creative problem solving."
     />
-    <meta name="twitter:image" content="/assets/img/profile-photo.png" />
+    <meta name="twitter:image" content="/assets/img/PwaImages/ios/512.png" />
 
     <!--==================== UNICONS ====================-->
     <link
@@ -31,63 +31,25 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
 
+    <!-- ====================PWA================== -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#6E57E0" />
+    <meta name="theme-color" content="#6E57E0" />
+
+    <!-- ============FAVICONS============== -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/favicons/favicon.ico"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <style>
-      /* Smooth fade-out for loader */
-      #loading {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        transition: opacity 0.6s ease, visibility 0.6s ease;
-      }
-
-      #loading.fade-out {
-        opacity: 0;
-        visibility: hidden;
-      }
-
-      .loader span {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #6e57e0;
-        animation: pulse 1.2s infinite alternate;
-      }
-
-      @keyframes pulse {
-        from {
-          opacity: 0.3;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      /* Dark mode base */
-body.dark-theme {
-  background-color: #121212;
-  color: #eaeaea;
-  transition: 0.4s ease;
-}
-
-/* Example overrides */
-.dark-theme .section__title,
-.dark-theme .footer__title {
-  color: #fff;
-}
-
-.dark-theme .nav__logo,
-.dark-theme .nav__link {
-  color: #ddd;
-}
-    </style>
   </head>
 
   <body>
@@ -99,7 +61,7 @@ body.dark-theme {
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo noSelect">Mary Temiloluwa</a>
+        <a href="#" class="nav__logo noSelect">Bisiriyu Mary</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -108,29 +70,28 @@ body.dark-theme {
                 <i class="uil uil-estate nav__icon"></i> Home
               </a>
             </li>
+
             <li class="nav__item">
               <a href="#about" class="nav__link noSelect">
                 <i class="uil uil-user nav__icon"></i> About
               </a>
             </li>
+
             <li class="nav__item">
               <a href="#skills" class="nav__link noSelect">
                 <i class="uil uil-file-alt nav__icon"></i> Skills
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#qualification" class="nav__link noSelect">
-                <i class="uil uil-graduation-cap nav__icon"></i> Education
-              </a>
-            </li>
+
             <li class="nav__item">
               <a href="#services" class="nav__link noSelect">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Activities
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
               </a>
             </li>
+
             <li class="nav__item">
               <a href="#contact" class="nav__link noSelect">
-                <i class="uil uil-message nav__icon"></i> Contact
+                <i class="uil uil-message nav__icon"></i> Contact Me
               </a>
             </li>
           </ul>
@@ -139,6 +100,7 @@ body.dark-theme {
 
         <div class="nav__btns">
           <i class="uil uil-moon change-theme" id="theme-button"></i>
+
           <div class="nav__toggle noSelect" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -147,6 +109,7 @@ body.dark-theme {
     </header>
 
     <!--==================== MAIN ====================-->
+
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
@@ -174,98 +137,95 @@ body.dark-theme {
                 class="home__blob"
                 viewBox="0 0 200 187"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
               >
                 <mask id="mask0" mask-type="alpha">
                   <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 
-                    182.328 134.186C163.346 165.547 130.807 187.559 
-                    100.226 186.353C69.6454 185.297 41.0228 161.023 
-                    21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 
-                    6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 
-                    97.9666 0.00163737C136.23 0.303176 174.193 10.857 
-                    190.312 36.4879Z"
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 
+                    134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 
+                    185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 
+                    59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
                 </mask>
                 <g mask="url(#mask0)">
                   <path
                     d="M190.312 36.4879C206.582 62.1187 201.309 102.826 
-                    182.328 134.186C163.346 165.547 130.807 187.559 
-                    100.226 186.353C69.6454 185.297 41.0228 161.023 
-                    21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 
-                    6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 
-                    97.9666 0.00163737C136.23 0.303176 174.193 10.857 
-                    190.312 36.4879Z"
+                    182.328 134.186C163.346 165.547 130.807 187.559 100.226 
+                    186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 
+                    34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                    0.00163737C136.23 0.303176 174.193 10.857 190.312 
+                    36.4879Z"
                   />
                   <image
                     class="home__blob-img"
-                    x="-25"
-                    xlink:href="assets/img/profile-photo.png"
+                    x="-20"
+                    xlink:href="assets/img/profile-placeholder.png"
                   ></image>
                 </g>
               </svg>
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Hi, I’m Mary Temiloluwa</h1>
-              <h3 class="home__subtitle">Taxation Student | Aspiring Consultant</h3>
+              <h1 class="home__title">Hi, I’m Bisiriyu Mary</h1>
+              <h3 class="home__subtitle">Taxation Student</h3>
               <p class="home__description">
-                Passionate about bridging financial knowledge with digital innovation.  
-                I explore taxation, accounting, and research to make meaningful contributions in public policy and finance.
+                A motivated and detail-oriented Taxation student at the
+                University of Lagos with a strong foundation in law, accounting,
+                and economics — passionate about applying academic knowledge to
+                real-world financial and consulting contexts.
               </p>
               <a href="#contact" class="button button--flex">
-                Contact Me <i class="uil uil-message button__icon"></i>
+                Contact Me<i class="uil uil-message button__icon"></i>
               </a>
             </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll Down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
           </div>
         </div>
       </section>
 
-      <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My Competencies</span>
-        <div class="skills__container container grid">
-          <div class="skills__container-box">
-            <img src="assets/img/skills/msword.svg" class="skills__container-img" />
-            <div class="skills__container-name">Microsoft Word</div>
-          </div>
-          <div class="skills__container-box">
-            <img src="assets/img/skills/msexcel.svg" class="skills__container-img" />
-            <div class="skills__container-name">Microsoft Excel</div>
-          </div>
-          <div class="skills__container-box">
-            <img src="assets/img/skills/uiux.svg" class="skills__container-img" />
-            <div class="skills__container-name">Basic UI/UX Design</div>
-          </div>
-          <div class="skills__container-box">
-            <img src="assets/img/skills/communication.svg" class="skills__container-img" />
-            <div class="skills__container-name">Communication</div>
-          </div>
-          <div class="skills__container-box">
-            <img src="assets/img/skills/teamwork.svg" class="skills__container-img" />
-            <div class="skills__container-name">Teamwork</div>
-          </div>
-          <div class="skills__container-box">
-            <img src="assets/img/skills/time.svg" class="skills__container-img" />
-            <div class="skills__container-name">Time Management</div>
-          </div>
-        </div>
-      </section>
       <!--==================== ABOUT ====================-->
+
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My Introduction</span>
 
         <div class="about__container container grid">
-          <img src="assets/img/about-mary.jpg" alt="Mary photo" class="about__image" />
+          <img src="assets/img/unilag-campus.jpg" alt="" class="about__image" />
 
           <div class="about__data">
             <p class="about__description">
-              I am a motivated and detail-oriented student of Taxation at the University of Lagos, 
-              with a strong academic foundation in Law, Accounting, and Economics. 
-              I enjoy applying classroom knowledge to real-world challenges, while enhancing my communication, teamwork, and leadership skills.
+              I am an enthusiastic student of Taxation at the University of
+              Lagos with interests spanning finance, law, and policy. My passion
+              lies in understanding how tax systems shape economies and business
+              growth. I have led academic presentations and volunteered as a
+              Sunday school teacher, honing my communication, leadership, and
+              organizational skills. I aspire to contribute to Nigeria’s fiscal
+              development through innovation and continuous learning.
             </p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">2023</span>
+                <span class="about__info-name">B.Sc. in<br />Taxation (in view)</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">2+</span>
+                <span class="about__info-name">Leadership<br />projects</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">3+</span>
+                <span class="about__info-name">Volunteer<br />activities</span>
+              </div>
+            </div>
 
             <div class="about__buttons">
               <a
@@ -273,112 +233,205 @@ body.dark-theme {
                 href="assets/pdf/Bisiriyu-Mary-Temiloluwa-CV.pdf"
                 class="button button--flex"
               >
-                Download Resume<i class="uil uil-download-alt button__icon"></i>
+                Download CV<i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!--==================== SKILLS ====================-->
+
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My Skill Set</span>
+        <div class="skills__container container grid">
+          <div class="skills__container-box">
+            <img
+              class="skills__container-img"
+              src="/assets/img/skills/word.svg"
+              alt="Microsoft Word"
+            />
+            <div class="skills__container-name">Microsoft Word</div>
+          </div>
+
+          <div class="skills__container-box">
+            <img
+              class="skills__container-img"
+              src="/assets/img/skills/excel.svg"
+              alt="Microsoft Excel"
+            />
+            <div class="skills__container-name">Microsoft Excel</div>
+          </div>
+
+          <div class="skills__container-box">
+            <img
+              class="skills__container-img"
+              src="/assets/img/skills/figma.svg"
+              alt="UI/UX Design"
+            />
+            <div class="skills__container-name">Basic UI/UX Design</div>
+          </div>
+
+          <div class="skills__container-box">
+            <i class="uil uil-users-alt skills__container-img"></i>
+            <div class="skills__container-name">Teamwork</div>
+          </div>
+
+          <div class="skills__container-box">
+            <i class="uil uil-comment skills__container-img"></i>
+            <div class="skills__container-name">Communication</div>
+          </div>
+
+          <div class="skills__container-box">
+            <i class="uil uil-clock skills__container-img"></i>
+            <div class="skills__container-name">Time Management</div>
+          </div>
+        </div>
+      </section>
+
       <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section" id="qualification">
+
+      <section class="qualification section">
         <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My Academic Journey</span>
+        <span class="section__subtitle">My Academic & Leadership Journey</span>
 
         <div class="qualification__container container">
-          <div class="qualification__content qualification__active">
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title">B.Sc. in Taxation</h3>
-                <span class="qualification__subtitle">University of Lagos</span>
-                <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2023 – Present
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+
+            <div
+              class="qualification__button button--flex"
+              data-target="#leadership"
+            >
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Experience
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--==================== EDUCATION ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    B.Sc. Taxation (In View)
+                  </h3>
+                  <span class="qualification__subtitle">University of Lagos</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> 2023 – Present
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
                 </div>
               </div>
             </div>
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title">Presenter - Lagos State Budgeting Presentation</h3>
-                <span class="qualification__subtitle">University of Lagos, 2024</span>
+
+            <!--==================== EXPERIENCE ====================-->
+            <div class="qualification__content" data-content id="leadership">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Group Leader – Companies Income Tax Presentation
+                  </h3>
+                  <span class="qualification__subtitle">University of Lagos, 2025</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> Led team research and presentation
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
               </div>
-            </div>
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title">Group Leader - Companies Income Tax Presentation</h3>
-                <span class="qualification__subtitle">University of Lagos, 2025</span>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Presenter – Lagos State Budgeting Presentation
+                  </h3>
+                  <span class="qualification__subtitle">University of Lagos, 2024</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> Represented group and simplified complex budgetary concepts
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Volunteer – Sunday School Teacher</h3>
+                  <span class="qualification__subtitle">Soul Salvation Church of Christ-Aladura</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> 2023 – Present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!--==================== SERVICES (VOLUNTEER + INTERESTS) ====================-->
+      <!--==================== SERVICES ====================-->
+
       <section class="services section" id="services">
-        <h2 class="section__title">Activities & Interests</h2>
-        <span class="section__subtitle">Volunteer Work & Passions</span>
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I Offer</span>
 
         <div class="services__container container grid">
-          <!-- Volunteer -->
           <div class="services__content">
             <div>
-              <i class="uil uil-heart services__icon"></i>
-              <h3 class="services__title">Volunteer <br />Service</h3>
+              <i class="uil uil-book-reader services__icon"></i>
+              <h3 class="services__title">Teaching & <br />Knowledge Sharing</h3>
             </div>
-
-            <div class="services__modal-content">
-              <ul class="services__modal-services grid">
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Sunday School Teacher at Soul Salvation Church of Christ-Aladura.</p>
-                </li>
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Organized activities to promote moral and spiritual development among youth.</p>
-                </li>
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Collaborated with other volunteers for outreach and educational events.</p>
-                </li>
-              </ul>
-            </div>
+            <p class="services__description">
+              Passionate about simplifying complex topics and helping others
+              learn effectively through engaging lessons and presentations.
+            </p>
           </div>
 
-          <!-- Interests -->
           <div class="services__content">
             <div>
-              <i class="uil uil-lightbulb-alt services__icon"></i>
-              <h3 class="services__title">Personal <br />Interests</h3>
+              <i class="uil uil-chart-line services__icon"></i>
+              <h3 class="services__title">Research & <br />Tax Analysis</h3>
             </div>
+            <p class="services__description">
+              Conducts academic research and applies theoretical tax knowledge
+              to real-world budgeting, accounting, and policy case studies.
+            </p>
+          </div>
 
-            <div class="services__modal-content">
-              <ul class="services__modal-services grid">
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Teaching & Knowledge Sharing</p>
-                </li>
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Creative Problem Solving through Digital Design</p>
-                </li>
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Children & Youth Empowerment</p>
-                </li>
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Taxation & Consulting Research</p>
-                </li>
-                <li class="services__modal-service">
-                  <i class="uil uil-check-circle services__modal-icon"></i>
-                  <p>Public Policy and Budgeting Trends</p>
-                </li>
-              </ul>
+          <div class="services__content">
+            <div>
+              <i class="uil uil-palette services__icon"></i>
+              <h3 class="services__title">Creative <br />Design (UI/UX)</h3>
             </div>
+            <p class="services__description">
+              Uses basic design tools to create simple and meaningful user
+              interfaces, promoting creativity and clarity in digital projects.
+            </p>
           </div>
         </div>
       </section>
 
       <!--==================== CONTACT ====================-->
+
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
@@ -389,7 +442,7 @@ body.dark-theme {
               <i class="uil uil-phone contact__icon"></i>
               <div>
                 <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">+234 701 296 6957</span>
+                <span class="contact__subtitle">+2347012966957</span>
               </div>
             </div>
 
@@ -413,18 +466,24 @@ body.dark-theme {
           <form action="#" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
+                <label class="contact__label">Name</label>
                 <input type="text" class="contact__input" />
               </div>
+
               <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
+                <label class="contact__label">Email</label>
                 <input type="email" class="contact__input" />
               </div>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
+              <label class="contact__label">Subject</label>
+              <input type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label class="contact__label">Message</label>
               <textarea cols="0" rows="7" class="contact__input"></textarea>
             </div>
+
             <div>
               <a href="#" class="button button--flex">
                 Send Message <i class="uil uil-message button__icon"></i>
@@ -436,79 +495,65 @@ body.dark-theme {
     </main>
 
     <!--==================== FOOTER ====================-->
-      <footer class="footer">
-        <div class="footer__bg">
-          <div class="footer__container container grid">
-            <div>
-              <h1 class="footer__title">Mary Temiloluwa</h1>
-              <span class="footer__subtitle">Taxation Student</span>
-            </div>
 
-            <ul class="footer__links">
-              <li><a href="#about" class="footer__link">About</a></li>
-              <li><a href="#skills" class="footer__link">Skills</a></li>
-              <li><a href="#contact" class="footer__link">Contact</a></li>
-            </ul>
-
-            <div class="footer__socials">
-              <a href="https://www.linkedin.com/in/mary-bisiriyu-1241a6314" target="_blank" class="footer__social">
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-            </div>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Bisiriyu Mary</h1>
+            <span class="footer__subtitle">Taxation Student</span>
           </div>
-          <p class="footer__copy">&#169; 2025 Bisiriyu Mary Temiloluwa. All rights reserved.</p>
+
+          <ul class="footer__links">
+            <li><a href="#services" class="footer__link">Services</a></li>
+            <li><a href="#contact" class="footer__link">Contact Me</a></li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/mary-bisiriyu-1241a6314"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+          </div>
         </div>
-      </footer>
 
-      <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-      </a>
+        <p class="footer__copy">
+          &#169; 2025 Bisiriyu Mary Temiloluwa. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
-      <!--==================== MAIN JS ====================-->
-<script src="assets/js/main.js"></script>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
-<!--==================== FIXED DARK MODE SCRIPT ====================-->
-<script>
-  const themeButton = document.getElementById("theme-button");
-  const darkTheme = "dark-theme";
-  const iconTheme = "uil-sun";
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
 
-  // Previously selected theme (if user selected)
-  const selectedTheme = localStorage.getItem("selected-theme");
-  const selectedIcon = localStorage.getItem("selected-icon");
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
 
-  // Get current theme
-  const getCurrentTheme = () =>
-    document.body.classList.contains(darkTheme) ? "dark" : "light";
-  const getCurrentIcon = () =>
-    themeButton.classList.contains(iconTheme) ? "uil-sun" : "uil-moon";
+    <!-- ===================== SHOW/HIDE LOADER ==================== -->
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none";
+      };
+    </script>
 
-  // If user already chose a theme before, apply it
-  if (selectedTheme) {
-    document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
-    themeButton.classList[selectedIcon === "uil-sun" ? "add" : "remove"](iconTheme);
-  }
-
-  // Activate/deactivate theme manually
-  themeButton.addEventListener("click", () => {
-    document.body.classList.toggle(darkTheme);
-    themeButton.classList.toggle(iconTheme);
-
-    // Save the chosen theme and icon
-    localStorage.setItem("selected-theme", getCurrentTheme());
-    localStorage.setItem("selected-icon", getCurrentIcon());
-  });
-</script>
-
-<!--==================== FIXED LOADER SCRIPT ====================-->
-<script>
-  window.addEventListener("load", function () {
-    const loader = document.getElementById("loading");
-    if (loader) {
-      loader.classList.add("fade-out");
-      setTimeout(() => loader.remove(), 600);
-    }
-  });
-</script>
-</body>
+    <!-- =====================REGISTER SERVICE WORKER================ -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+        });
+      }
+    </script>
+  </body>
 </html>
